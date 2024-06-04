@@ -11,7 +11,7 @@ async function find(id) {
 
 // Function to create
 async function create(str) {
-
+    
     const values = {
         str: str.value
     }

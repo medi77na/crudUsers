@@ -35,22 +35,22 @@
     <!-- SECTION TO USER REGISTER -->
     <section>
         <article>
-            <form>
+            <form id="formUsers">
                 <div class="mb-3">
                     <label for="completeName" class="form-label">Complete name:</label>
-                    <input type="text" class="form-control" id="completeName">
+                    <input type="text" class="form-control" id="completeName" required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email">
+                    <input type="email" class="form-control" id="email" required>
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password">
+                    <input type="password" class="form-control" id="password" required>
                 </div>
                 <div class="mb-3">
                     <label for="confirmPassword" class="form-label">Confirm password</label>
-                    <input type="password" class="form-control" id="confirmPassword">
+                    <input type="password" class="form-control" id="confirmPassword" required>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
@@ -69,17 +69,8 @@
                         <th scope="col">Password</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td scope="col">
-                            <button type="button" class="btn btn-warning">Editar</button>
-                            <button type="button" class="btn btn-danger">Eliminar</button>
-                        </td>
-                    </tr>
+                <tbody id="spaceUsers">
+
                 </tbody>
             </table>
         </article>
