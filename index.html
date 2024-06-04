@@ -1,47 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <!-- METADATOS -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <meta name="description" content="Texto descriptivo de lo que hace nuestra página" />
-        <meta name="keywords"
-            content="(Serie de palabras que describen la funcionalidad y operatividad de mi página) David, Steven, Medina, Urrego, medi77na">
-        <meta name="sitedomain" content="(URL de nuestra página)" />
-        <meta name="organization" content="riwi" />
-        <meta name="author" content="David Steven Medina Urrego" />
-        <meta name="designer" content="David Steven Medina Urrego" />
-        <meta name="copyright" content="© 2024 Riwi. Todos los derechos reservados">
-        <meta name="robots" content="index,follow" />
-        <meta name="googlebot" content="index,follow" />
-        <meta name="revisit-after" content="15days" />
-        
-        <!-- FAVICON -->
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- METADATOS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <meta name="description" content="Texto descriptivo de lo que hace nuestra página" />
+    <meta name="keywords"
+        content="(Serie de palabras que describen la funcionalidad y operatividad de mi página) David, Steven, Medina, Urrego, medi77na">
+    <meta name="sitedomain" content="(URL de nuestra página)" />
+    <meta name="organization" content="riwi" />
+    <meta name="author" content="David Steven Medina Urrego" />
+    <meta name="designer" content="David Steven Medina Urrego" />
+    <meta name="copyright" content="© 2024 Riwi. Todos los derechos reservados">
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="revisit-after" content="15days" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    
+
 </body>
-    <!-- HEADER -->
-    <header>
+<!-- HEADER -->
+<header>
 
-    </header>
+</header>
 
-    <!-- MAIN -->
-    <main>
-        <div class="container py-4 px-3 mx-auto">
-            <h1>Hello, Bootstrap and Vite!</h1>
-            <button class="btn btn-primary">Primary button</button>
-        </div>
-    </main>
+<!-- MAIN -->
+<main>
+    <!-- SECTION TO USER REGISTER -->
+    <section>
+        <article>
+            <form>
+                <div class="mb-3">
+                    <label for="completeName" class="form-label">Complete name:</label>
+                    <input type="text" class="form-control" id="completeName">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                <div class="mb-3">
+                    <label for="confirmPassword" class="form-label">Confirm password</label>
+                    <input type="password" class="form-control" id="confirmPassword">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </article>
+    </section>
 
-    <!-- FOOTER --> 
-    <footer>
+    <!-- SECTION TO SHOW USERS -->
+    <section>
+        <article>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Complete Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Password</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td scope="col">
+                            <button type="button" class="btn btn-warning">Editar</button>
+                            <button type="button" class="btn btn-danger">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
+</main>
 
-    </footer>
+<!-- FOOTER -->
+<footer>
 
-    <!-- LINK DE JS -->
-    <script type="module" src="./src/js/main.js"></script>
+</footer>
+
+<!-- LINK DE JS -->
+<script type="module" src="./src/js/main.js"></script>
+
 </html>
